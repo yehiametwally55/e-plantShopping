@@ -214,6 +214,13 @@ body {
   .product-button:hover {
     background-color: #45a049;
   }
+  .product-button:disabled {
+    background-color: #808080 !important; /* Grey color */
+    color: #eeeeee !important;
+    cursor: not-allowed; /* Shows the 'block' circle icon on hover */
+    pointer-events: none; /* Physical block: prevents the click from reaching the logic */
+    opacity: 0.6;
+}
   
   .product-button.added-to-cart {
     background-color: grey; /* Grey when product is added */
